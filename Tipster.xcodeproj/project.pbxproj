@@ -14,6 +14,8 @@
 		D0EF41561C25E03A001DA9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EF41541C25E03A001DA9CE /* LaunchScreen.storyboard */; };
 		D0EF41611C25E03B001DA9CE /* TipsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF41601C25E03B001DA9CE /* TipsterTests.swift */; };
 		D0EF416C1C25E03B001DA9CE /* TipsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF416B1C25E03B001DA9CE /* TipsterUITests.swift */; };
+		D0EF417A1C28AF93001DA9CE /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0EF41791C28AF93001DA9CE /* fontawesome-webfont.ttf */; };
+		D0EF417C1C292DAE001DA9CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF417B1C292DAE001DA9CE /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D0EF41671C25E03B001DA9CE /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EF416B1C25E03B001DA9CE /* TipsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsterUITests.swift; sourceTree = "<group>"; };
 		D0EF416D1C25E03B001DA9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EF41791C28AF93001DA9CE /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "../../../../Desktop/font-awesome-4.5.0/fonts/fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		D0EF417B1C292DAE001DA9CE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				D0EF414B1C25E03A001DA9CE /* AppDelegate.swift */,
 				D0EF414D1C25E03A001DA9CE /* ViewController.swift */,
 				D0EF414F1C25E03A001DA9CE /* Main.storyboard */,
+				D0EF41791C28AF93001DA9CE /* fontawesome-webfont.ttf */,
 				D0EF41521C25E03A001DA9CE /* Assets.xcassets */,
 				D0EF41541C25E03A001DA9CE /* LaunchScreen.storyboard */,
 				D0EF41571C25E03A001DA9CE /* Info.plist */,
+				D0EF417B1C292DAE001DA9CE /* SettingsViewController.swift */,
 			);
 			path = Tipster;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					D0EF41471C25E03A001DA9CE = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = FD4JZGW3KV;
 					};
 					D0EF415B1C25E03B001DA9CE = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -230,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0EF41561C25E03A001DA9CE /* LaunchScreen.storyboard in Resources */,
+				D0EF417A1C28AF93001DA9CE /* fontawesome-webfont.ttf in Resources */,
 				D0EF41531C25E03A001DA9CE /* Assets.xcassets in Resources */,
 				D0EF41511C25E03A001DA9CE /* Main.storyboard in Resources */,
 			);
@@ -258,6 +266,7 @@
 			files = (
 				D0EF414E1C25E03A001DA9CE /* ViewController.swift in Sources */,
 				D0EF414C1C25E03A001DA9CE /* AppDelegate.swift in Sources */,
+				D0EF417C1C292DAE001DA9CE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oranuch.Tipster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oranuch.Tipster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +497,7 @@
 				D0EF41721C25E03B001DA9CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0EF41731C25E03B001DA9CE /* Build configuration list for PBXNativeTarget "TipsterTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +506,7 @@
 				D0EF41751C25E03B001DA9CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0EF41761C25E03B001DA9CE /* Build configuration list for PBXNativeTarget "TipsterUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +515,7 @@
 				D0EF41781C25E03B001DA9CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
