@@ -16,6 +16,8 @@
 		D0EF416C1C25E03B001DA9CE /* TipsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF416B1C25E03B001DA9CE /* TipsterUITests.swift */; };
 		D0EF417A1C28AF93001DA9CE /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0EF41791C28AF93001DA9CE /* fontawesome-webfont.ttf */; };
 		D0EF417C1C292DAE001DA9CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF417B1C292DAE001DA9CE /* SettingsViewController.swift */; };
+		D0F0E7881C372B9700198CD1 /* TwoTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0E7861C372B9700198CD1 /* TwoTabViewController.swift */; };
+		D0F0E7891C372B9700198CD1 /* TwoTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F0E7871C372B9700198CD1 /* TwoTabViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		D0EF416D1C25E03B001DA9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0EF41791C28AF93001DA9CE /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "../../../../Desktop/font-awesome-4.5.0/fonts/fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		D0EF417B1C292DAE001DA9CE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D0F0E7861C372B9700198CD1 /* TwoTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoTabViewController.swift; sourceTree = "<group>"; };
+		D0F0E7871C372B9700198CD1 /* TwoTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoTabViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				D0EF41791C28AF93001DA9CE /* fontawesome-webfont.ttf */,
 				D0EF41521C25E03A001DA9CE /* Assets.xcassets */,
 				D0EF41541C25E03A001DA9CE /* LaunchScreen.storyboard */,
+				D0F0E7861C372B9700198CD1 /* TwoTabViewController.swift */,
+				D0F0E7871C372B9700198CD1 /* TwoTabViewController.xib */,
 				D0EF41571C25E03A001DA9CE /* Info.plist */,
 				D0EF417B1C292DAE001DA9CE /* SettingsViewController.swift */,
 			);
@@ -238,6 +244,7 @@
 			files = (
 				D0EF41561C25E03A001DA9CE /* LaunchScreen.storyboard in Resources */,
 				D0EF417A1C28AF93001DA9CE /* fontawesome-webfont.ttf in Resources */,
+				D0F0E7891C372B9700198CD1 /* TwoTabViewController.xib in Resources */,
 				D0EF41531C25E03A001DA9CE /* Assets.xcassets in Resources */,
 				D0EF41511C25E03A001DA9CE /* Main.storyboard in Resources */,
 			);
@@ -265,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0EF414E1C25E03A001DA9CE /* ViewController.swift in Sources */,
+				D0F0E7881C372B9700198CD1 /* TwoTabViewController.swift in Sources */,
 				D0EF414C1C25E03A001DA9CE /* AppDelegate.swift in Sources */,
 				D0EF417C1C292DAE001DA9CE /* SettingsViewController.swift in Sources */,
 			);
