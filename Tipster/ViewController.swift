@@ -47,7 +47,6 @@ class ViewController: UIViewController{
         } else {
             tipLabel.text = "$0.00"
             totalLabel.text = "$0.00"
-            personLabel.text = "\u{f007}"
             eachPersonLabel.text = "Each Person"
             numPeopleSplit.text = "x 1"
         }
