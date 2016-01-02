@@ -101,7 +101,6 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource, UIPickerV
             impressiveLabel.text = String(impressive) + "%"
         }
     }
-
     
     /* ==================== Switch ======================= */
     
