@@ -198,7 +198,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Percentages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nrg-2z-5cb">
-                                <rect key="frame" x="8" y="81" width="139" height="21"/>
+                                <rect key="frame" x="8" y="29" width="139" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -206,7 +206,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alright:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wJu-EX-8dH">
-                                <rect key="frame" x="8" y="126" width="56" height="21"/>
+                                <rect key="frame" x="8" y="74" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -214,7 +214,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Job:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bcb-FY-Wab">
-                                <rect key="frame" x="8" y="164" width="80" height="21"/>
+                                <rect key="frame" x="8" y="150" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -222,7 +222,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impressive:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kn3-ky-ZBw">
-                                <rect key="frame" x="8" y="205" width="87" height="21"/>
+                                <rect key="frame" x="8" y="241" width="87" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -230,14 +230,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shake to clear:" textAlignment="natural" minimumFontSize="17" id="huO-ef-AbQ">
-                                <rect key="frame" x="8" y="251" width="139" height="30"/>
+                                <rect key="frame" x="8" y="329" width="139" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="QLi-uj-ImQ">
-                                <rect key="frame" x="177" y="251" width="51" height="31"/>
+                                <rect key="frame" x="177" y="329" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,45 +246,14 @@
                                 </connections>
                             </switch>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="state" textAlignment="natural" minimumFontSize="17" id="MKG-yz-6h3">
-                                <rect key="frame" x="245" y="251" width="48" height="30"/>
+                                <rect key="frame" x="245" y="329" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="tcg-tE-AyW">
-                                <rect key="frame" x="146" y="122" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="didBeginEditing:" destination="5IN-8F-vft" eventType="editingDidBegin" id="6WT-bf-nm6"/>
-                                    <outlet property="delegate" destination="5IN-8F-vft" id="q2d-ZW-zRw"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="2HW-M6-3ah">
-                                <rect key="frame" x="146" y="160" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="5IN-8F-vft" id="12P-CT-aYr"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="Xvh-Zh-JgV">
-                                <rect key="frame" x="146" y="201" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="5IN-8F-vft" id="2wB-0U-Y2c"/>
-                                </connections>
-                            </textField>
                             <pickerView contentMode="scaleToFill" id="umM-zC-Zfp">
-                                <rect key="frame" x="0.0" y="301" width="320" height="198"/>
+                                <rect key="frame" x="0.0" y="379" width="320" height="198"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -294,6 +263,56 @@
                                     <outlet property="delegate" destination="5IN-8F-vft" id="i79-JC-S9R"/>
                                 </connections>
                             </pickerView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" id="NJN-ny-blg">
+                                <rect key="frame" x="6" y="104" width="309" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" red="0.90060536649214662" green="0.90060536649214662" blue="0.90060536649214662" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="OnSliderValueChanged:" destination="5IN-8F-vft" eventType="valueChanged" id="QbF-IF-1C3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ITS-qA-rcV">
+                                <rect key="frame" x="147" y="74" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SjK-y2-lIm">
+                                <rect key="frame" x="139" y="150" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" id="azI-tv-x4X">
+                                <rect key="frame" x="6" y="189" width="309" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="OnSliderValueChanged:" destination="5IN-8F-vft" eventType="valueChanged" id="gpK-Wk-lYC"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" id="4aY-DZ-Kkk">
+                                <rect key="frame" x="6" y="275" width="309" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="OnSliderValueChanged:" destination="5IN-8F-vft" eventType="valueChanged" id="uzU-4f-95i"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3oK-Na-bCd">
+                                <rect key="frame" x="139" y="241" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -304,9 +323,12 @@
                     <tabBarItem key="tabBarItem" title="" image="setting" id="B3q-ei-8Lx"/>
                     <navigationItem key="navigationItem" title="Settings" id="T6H-pI-s9t"/>
                     <connections>
-                        <outlet property="alrightTextField" destination="tcg-tE-AyW" id="3OU-tD-TeU"/>
-                        <outlet property="goodTextField" destination="2HW-M6-3ah" id="4tt-2w-7Ed"/>
-                        <outlet property="impressiveTextField" destination="Xvh-Zh-JgV" id="Qtp-bS-aHt"/>
+                        <outlet property="alrightLabel" destination="ITS-qA-rcV" id="3Vh-8l-peT"/>
+                        <outlet property="alrightSlider" destination="NJN-ny-blg" id="reH-aA-S9x"/>
+                        <outlet property="goodLabel" destination="SjK-y2-lIm" id="IZx-wF-The"/>
+                        <outlet property="goodSlider" destination="azI-tv-x4X" id="JId-uK-NXE"/>
+                        <outlet property="impressiveLabel" destination="3oK-Na-bCd" id="zKp-PZ-RyW"/>
+                        <outlet property="impressiveSlider" destination="4aY-DZ-Kkk" id="taw-Dr-1cy"/>
                         <outlet property="percentPicker" destination="umM-zC-Zfp" id="7MC-0W-F7A"/>
                         <outlet property="shakeSwitch" destination="QLi-uj-ImQ" id="bCg-LK-ZeP"/>
                         <outlet property="switchField" destination="MKG-yz-6h3" id="WsW-RS-p4m"/>

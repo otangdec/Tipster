@@ -50,12 +50,14 @@ class ViewController: UIViewController{
             eachPersonLabel.text = "Each Person"
             numPeopleSplit.text = "x 1"
         }
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         shakeFlag = defaults.boolForKey("shakeFlag")
-        
+        let alright = defaults.stringForKey("alright")
     }
     
     override func viewWillDisappear(animated: Bool) {

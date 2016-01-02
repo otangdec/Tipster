@@ -13,12 +13,16 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var shakeSwitch: UISwitch!
     @IBOutlet weak var switchField: UITextField!
     @IBOutlet weak var percentPicker: UIPickerView!
-    @IBOutlet weak var alrightTextField: UITextField!
-    @IBOutlet weak var goodTextField: UITextField!
-    @IBOutlet weak var impressiveTextField: UITextField!
     let defaults = NSUserDefaults.standardUserDefaults()
     var shakeFlag = true
 
+    @IBOutlet weak var alrightLabel: UILabel!
+    @IBOutlet weak var alrightSlider: UISlider!
+    @IBOutlet weak var goodLabel: UILabel!
+    @IBOutlet weak var goodSlider: UISlider!
+    
+    @IBOutlet weak var impressiveLabel: UILabel!
+    @IBOutlet weak var impressiveSlider: UISlider!
     
     let percentDicts = ["15%":0.15, "18%":0.18, "20%":0.20, "25%":0.25, "30%":0.3]
     //let percentKeys = ["15%","18%","20%","25%","30%"]
@@ -34,8 +38,21 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource, UIPickerV
         
         //Sort(asc) percentDicts by key
         percentKeys = percentDicts.keys.sort{$0<$1}
+        
+        // Set Tag for Sliders
+        alrightSlider.tag = 1
+        goodSlider.tag = 2
+        impressiveSlider.tag = 3
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
+    
+    /* ======================== Picker ======================== */
+    // Have not been implemented yet
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -63,19 +80,30 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource, UIPickerV
         return false
     }
     
+
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    /* ==================== Slider ======================= */
+
+    @IBAction func OnSliderValueChanged(sender: AnyObject) {
+        updateValueOnSlide(sender as! UISlider)
     }
     
-    @IBAction func onEditingChanged(sender: AnyObject) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-//        defaults.setDouble(Double(alrightField.text!)!, forKey: "alright")
-//        defaults.setDouble(Double(goodField.text!)!, forKey: "good")
-//        defaults.setDouble(Double(impressiveField.text!)!, forKey: "impressive")
-        defaults.synchronize()
+    // Detect which slider is being used and update the proper label
+    func updateValueOnSlide(slider: UISlider){
+        if slider.tag == 1{
+            let alright = Int(round(alrightSlider.value))
+            alrightLabel.text = String(alright) + " %"
+        } else if slider.tag == 2 {
+            let good = Int(round(goodSlider.value))
+            goodLabel.text = String(good) + " %"
+        } else if slider.tag == 3 {
+            let impressive = Int(round(impressiveSlider.value))
+            impressiveLabel.text = String(impressive) + "%"
+        }
     }
+
+    
+    /* ==================== Switch ======================= */
     
     // Switch to turn on shake to clear function
     @IBAction func onShakeSwitched(sender: AnyObject) {
@@ -100,14 +128,6 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource, UIPickerV
         defaults.setBool(shakeFlag, forKey: "shakeFlag")
         defaults.synchronize()
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
