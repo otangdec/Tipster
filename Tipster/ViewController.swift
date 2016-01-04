@@ -33,6 +33,9 @@ class ViewController: UIViewController{
     var splitAmount = 0.0
     var shakeFlag = true
     var tipIncludedFlag = false
+    var alright = 0
+    var good = 0
+    var impressive = 0
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -57,7 +60,7 @@ class ViewController: UIViewController{
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         shakeFlag = defaults.boolForKey("shakeFlag")
-        let alright = defaults.stringForKey("alright")
+        setSegmentedControlValues()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -92,6 +95,17 @@ class ViewController: UIViewController{
         splitAmount = total/Double(splitValue)
         eachPersonAmount.text = String(format: "$%.2f" , splitAmount)
         
+    }
+    
+    // Retrieve values from storage and apply to the segmented control
+    func setSegmentedControlValues(){
+        alright = defaults.integerForKey("alright")
+        good = defaults.integerForKey("good")
+        impressive = defaults.integerForKey("impressive")
+        
+        tipControl.setTitle(String(alright) + "%" , forSegmentAtIndex: 0)
+        tipControl.setTitle(String(good) + "%" , forSegmentAtIndex: 1)
+        tipControl.setTitle(String(impressive) + "%" , forSegmentAtIndex: 2)
     }
     
     func updateLabel(){

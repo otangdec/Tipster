@@ -93,12 +93,15 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource, UIPickerV
         if slider.tag == 1{
             let alright = Int(round(alrightSlider.value))
             alrightLabel.text = String(alright) + " %"
+            defaults.setInteger(alright, forKey: "alright")
         } else if slider.tag == 2 {
             let good = Int(round(goodSlider.value))
             goodLabel.text = String(good) + " %"
+            defaults.setInteger(good, forKey: "good")
         } else if slider.tag == 3 {
             let impressive = Int(round(impressiveSlider.value))
             impressiveLabel.text = String(impressive) + "%"
+            defaults.setInteger(impressive, forKey: "impressive")
         }
     }
     
